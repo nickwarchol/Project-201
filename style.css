@@ -1,0 +1,287 @@
+/*global*/
+html{
+    font-size:62.5%;
+}
+*{
+
+    padding:0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+@media(min-width:768px){
+    .btn{
+        display:inline-block;
+        flex-basis:auto;
+    }
+}
+.container{
+        width: 80%;
+        margin:0 auto;
+        padding-top: 5rem;
+}
+header{
+    background-image: url(../img/banner.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+h1{
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: 400;
+    padding: 3rem 0;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 2;
+}
+img{
+    max-width: 100%;
+}
+/*utility*/
+.center{
+    text-align: center;
+}
+
+.btn{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem 0;
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    background-color: #000000;
+    flex:0 0 100%;
+}
+
+nav{
+    display: block;
+    justify-content: space-around;
+    width: 90%;
+    text-align: center;
+    padding:3rem;
+}
+
+@media(min-width:768px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        font-size: 3.2rem;
+    }
+    nav a{
+        margin-right: 2rem;
+    }
+}
+
+nav a{
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration:none;
+}
+
+.info{
+    text-align:center;
+    font-size: 30px;
+}
+@media(min-width:768px){
+    .site-header{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.header-text{
+    text-align: center;
+}
+.header-text p{
+    font-size: 2.8rem;
+}
+.container{
+    width: 80%;
+    margin:0 auto;
+    padding-top: 5rem;
+}
+/*blog section*/
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.blog-entry{
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid tan;
+}
+.blog-entry:last-of-type{
+    border:none;
+}
+.blog-text p{
+    font-size: 1.5rem;
+}
+.blog, .courses{
+    flex: 0 0 100%;
+}
+.courses{
+    order: -1;
+}
+@media(min-width:768px){
+    .main-container{
+        justify-content: space-between;
+    }
+    .blog{
+        flex-basis:66.6%;
+    }
+    .courses{
+        flex-basis:calc(33.3% - 4rem);
+        order: 2;
+    }
+}
+/*footer*/
+.site-footer{
+    background-color: black;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+.footer-container p{
+    font-size:4rem;
+    color: #ffffff;
+    text-align: center;
+}
+.footer-container p strong{
+    font-weight: 700;
+}
+@media(min-width:768px){
+    .footer-container{
+    display: flex;
+    justify-content:space-between;
+    }
+}
+
+/*contact*/
+@media(min-width:768px){
+    .flex{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .center-elements{
+        justify-content: center;
+    }
+    .complete{
+        flex: 0 0 100%;
+    }
+    .portion-6{
+        flex:0 0 calc(66.6% - 1rem);
+    }
+}
+.complete{
+    text-align: center;
+}
+.contact-form{
+    background-color: white;
+    padding: 5rem;
+}
+@media(min-width:768px){
+    .contact-form{
+        margin-top: -10rem;
+    }
+}
+.contact-form .field{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.contact-form .field label{
+    font-size: 1.6rem;
+    flex: 0 0 8rem;
+}
+
+.contact-form .field input[type="text"],.contact-form .field input[type="email"], .contact-form .field textarea{
+flex:1;
+border: 1px solid white;
+padding: 1rem;
+font-size: 1.6rem;
+}
+.contact-form .field input[type="submit"]{
+    border: none;
+}
+.contact-form .field textarea{
+    height:20rem;
+}
+
+.register{
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid black;
+}
+/*about*/
+@media(min-width:768px){
+    .grid{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 2rem;
+    }
+}
+.grid-img{
+   margin: 3rem 0;
+}
+.grid-text p{
+    text-align: justify;
+
+}
+.grid-text{
+    margin:3rem 0;
+}
+/*courses page*/
+.courses1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image1{
+    align-items: center;
+    display: flex;
+    width:27rem;;
+    border:1px solid black;  
+}
+.container-flex{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding:20px 0;
+}
+.upcoming-courses{
+    text-align: center;
+}
+.image-description{
+    width:500px;
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+
+    /* backgrund-color: red; */
+}
+.image-description div{
+    margin:10px 0;
+}
+.image-description h1{
+    text-align: left;
+}
+
